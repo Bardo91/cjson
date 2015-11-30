@@ -103,7 +103,7 @@ namespace cjson {
 	//------------------------------------------------------------------------------------------------------------------
 	bool Parser::parseNumber(Json& _dst) {
 		// Skip all digits
-		const std::string digits("0123456789");
+		const std::string digits("+-0123456789");
 		std::string num;
 		if(mIn->peek() == '+')
 			mIn->ignore();
